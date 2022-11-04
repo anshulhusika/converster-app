@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUSIKA</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo"><span class="rred">Husika</span><span class="red">.</span></a>
+    <ul class="navigation">
+        <li><samp class="home"><i class="fa-solid fa-house"></i></samp>&nbsp&nbsp&nbsp<a href="#home">Home</a></li>
+        <li><samp class="home"><i class="fa-solid fa-person-digging"></i></samp>&nbsp&nbsp&nbsp<a href="#menu">Menu</a></li>
+        <li><samp class="home"><i class="fa-regular fa-address-card"></i></samp>&nbsp&nbsp&nbsp<a href="#about">About</a></li>
+        <li><samp class="home"><i class="fa-solid fa-info"></i></samp>&nbsp&nbsp&nbsp<a href="#contact us">Contact us</a></li>
+    </ul>
+</header>
+
+    <section class="banner">
+    <div class="controler">
+      <div class="rightside">
+    
+                <div class="head">
+                        <h1  class="mainhead">MAKING VIDEO TO MP3 EASY.</h1>
+                    <div class="input-type">
+                           <input  type="text" id="search" class="input-search" placeholder="type your  video     url..." value=""/>
+                           <button  class="button"type="button" onclick='javascript: window.open("https://convert2mp3s.com/api/widget?url="+document.getElementById("search").value, "_self");'>Search.</button>
+                          <!-- <button onclick="TestsFunction()">Test</button> -->
+                    </div>
+                </div>
+    
+         </div>
+
+   
+         <div class="container">
+                  <iframe id="responsive-iframe" src="https://convert2mp3s.com/api/widget?url=https://www.youtube.com/watch?v=pRpeEdMmmQ0"
+                   allowtransparency="true" scrolling="no" style="border:none"></iframe>
+                  <script>iFrameResize({ log: false, minHeight: 400 }, '#widgetApi')</script>
+          </div> 
+
+          
+  </div>
+
+   
+  
+
+</section>
+
+</body>
+</html>

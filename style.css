@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Kanit&family=Rampart+One&family=Ubuntu&display=swap');
+
+/* *{
+    box-sizing: border-box;
+} */
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    }
+    header .logo{
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+    
+    }
+    header .logo .red{
+        color: #fd4848;
+    }
+    header .logo .rred{
+        color: beige ;
+    
+    }
+    
+    header .logo span{
+    font-size: 42px;
+    margin-right: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+    }
+    header .navigation{
+    display: flex;
+    float: right;
+    margin-right: 200px;
+    
+    }
+    header .navigation li{
+    list-style: none;
+    padding: 15px;
+    
+    
+    
+    }
+    header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500px;
+    }
+    header.sticky .navigation li a{
+    color: #111;
+    position: absolute;
+    
+    } 
+    
+     header .navigation li a:hover{
+    color: #fd523c;
+    } 
+    
+    
+    
+    .banner{
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* flex-wrap: wrap; */
+        margin: auto;
+        background: url(background.jpg);
+        background-size: cover;
+
+        
+    
+    }
+    .controler{
+        display: flex;
+        
+        height: 100vh;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        /* text-align: center; */
+        
+        
+    }
+    /* .controler:hover{
+        display: flex;
+        flex-wrap: wrap;
+    } */
+    .rightside{
+        /* border: 1px solid black; */
+        display: flex;
+        text-align: center;
+        
+        align-items: center;
+        height: 70vh;
+        width: 49.9;
+        /* box-sizing: border-box; */
+    
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        width: 49.9%;
+        align-items: center;
+        /* border:  1px solid black; */
+        height: 70vh;
+        /* 1:1 Aspect Ratio */
+       
+         }
+   
+    
+    .mainhead{
+      font-size: 3em;
+      font-family: 'Rampart One', cursive;
+      
+        opacity: 0.8;
+    }
+    .head{
+        padding: 20px;
+
+    
+        /* margin: auto; */
+
+    }
+    
+    
+    .button{
+
+     
+
+        font-size: 2.1em;
+        color: #fff;
+        background: #fd4848;
+       
+        padding: 10px 30px;
+        
+        text-decoration: none;
+        letter-spacing: 2px;
+        transition: 0.5s;
+        border-radius: 40px;
+        border-color:#3cfce5 ;
+        font-family: 'Ubuntu', sans-serif;
+        opacity: 0.8;
+        box-shadow: 5px 5px 5px rgba(0, 0,0, 0.1),
+        15px 15px 15px rgba(0, 0,0, 0.1),
+        20px 20px 15px rgba(0, 0,0, 0.1),
+        30px 30px 15px rgba(0, 0,0, 0.1);
+    
+    }
+    .button:hover{
+        letter-spacing: 4px;
+        
+    }
+    .input-search{
+        
+
+        /* width: 520px; */
+        
+       
+        padding: 10px 30px;
+       
+        border-radius: 40px;
+        transition: 0.5s;
+        color: rgb(91, 55, 189);
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 2.1em;
+        border-color:#3cfce5;
+       
+        opacity: 0.8;
+        box-shadow: 5px 5px 5px rgba(0, 0,0, 0.1),
+        15px 15px 15px rgba(0, 0,0, 0.1),
+        20px 20px 15px rgba(0, 0,0, 0.1),
+        30px 30px 15px rgba(0, 0,0, 0.1);
+    
+        
+        
+    }
+    .input-search:hover{
+        word-spacing: 3px;
+    }
+  
+      
+      
+    iframe {
+        border-color: #3cfce5;
+         height: 90%;
+         width: 60%;
+         /* position: absolute; */
+        
+         
+
+         border-radius: 30px;
+         /* margin-top: 10%;
+         margin-left: 4%;
+         display:flex; */
+        
+    
+         /* diable click any tag */
+         pointer-events: none;
+    
+       opacity: 0.8;
+       box-shadow: 5px 5px 5px rgba(0, 0,0, 0.1),
+        15px 15px 15px rgba(0, 0,0, 0.1),
+        20px 20px 15px rgba(0, 0,0, 0.1),
+        30px 30px 15px rgba(0, 0,0, 0.1);
+        transition: 0.5s;
+        
+    
+    }
+    
+    /* }iframe:hover{
+    
+        height: 30%;
+         width: 28%;
+     
+         */
+/*applying transition on list by giving same class name to all list element */
+
+
+header ul li .home{
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+header ul li:hover .home{
+    opacity: 1;
+    visibility: visible;
+
+}
+/*applying transition on every list seprately with difrrent class name*/
+
+
+
+/* header ul li .menu{
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+header ul li:hover .menu{
+    opacity: 1;
+    visibility: visible;
+
+}
+header ul li .about{
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+header ul li:hover .about{
+    opacity: 1;
+    visibility: visible;
+
+}
+header ul li .contact{
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+header ul li:hover .contact{
+    opacity: 1;
+    visibility: visible;
+
+} */
+
