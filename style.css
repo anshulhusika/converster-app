@@ -186,6 +186,7 @@ body{
         font-family: 'Ubuntu', sans-serif;
         font-size: 2em;
         border-color:#3cfce5;
+        margin-bottom: 10px;
        
         opacity: 0.8;
         box-shadow: 5px 5px 5px rgba(0, 0,0, 0.1),
