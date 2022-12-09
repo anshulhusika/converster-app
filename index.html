@@ -12,15 +12,34 @@
 
 </head>
 <body>
-  <header>
+  
+  <div class="topnav" id="myTopnav">
+    <div class="navr">
+      <a href="index.html" class="logo"><span class="rred">Husika.</span></a>
+    </div>
+    <div class="navl">
+      <a href="#home" class="active"></a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+  </div>
+  <!-- <header>
     <a href="index.html" class="logo"><span class="rred">Husika</span><span class="red">.</span></a>
     <ul class="navigation">
         <li><samp class="home"><i class="fa-solid fa-house"></i></samp>&nbsp&nbsp&nbsp<a href="#home">Home</a></li>
         <li><samp class="home"><i class="fa-solid fa-person-digging"></i></samp>&nbsp&nbsp&nbsp<a href="#menu">Menu</a></li>
         <li><samp class="home"><i class="fa-regular fa-address-card"></i></samp>&nbsp&nbsp&nbsp<a href="#about">About</a></li>
         <li><samp class="home"><i class="fa-solid fa-info"></i></samp>&nbsp&nbsp&nbsp<a href="#contact us">Contact us</a></li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
     </ul>
-</header>
+</header> -->
 
     <section class="banner">
     <div class="controler">
@@ -29,8 +48,8 @@
                 <div class="head">
                         <h1  class="mainhead">MAKING VIDEO TO MP3 EASY.</h1>
                     <div class="input-type">
-                           <input  type="text" id="search" class="input-search" placeholder="type your  video     url..." value=""/>
-                           <button  class="button"type="button" onclick='javascript: window.open("https://convert2mp3s.com/api/widget?url="+document.getElementById("search").value, "_self");'>Search.</button>
+                           <input  type="text" id="search" class="input-search" placeholder="paste your video url..." value=""/>
+                           <button  class="button"type="button" onclick='javascript: window.open("https://convert2mp3s.com/api/widget?url="+document.getElementById("search").value, "_self");'>Search</button>
                           <!-- <button onclick="TestsFunction()">Test</button> -->
                     </div>
                 </div>
@@ -43,11 +62,32 @@
                    allowtransparency="true" scrolling="no" style="border:none"></iframe>
                   <script>iFrameResize({ log: false, minHeight: 400 }, '#widgetApi')</script>
           </div> 
+          <footer>
+            <ul class="foot">
+              <div class="fn">
+                <a class="f-22" href="">about</a>
+                <a class="f-22" href="">contact</a>
+              </div>
+              
+              <p>licence 2022</p>
+            </ul>
+          </footer>
 
           
   </div>
 
    
+  
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
   
 
 </section>
