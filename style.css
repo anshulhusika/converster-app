@@ -7,8 +7,8 @@
 body{
     margin: 0px;
     padding: 0px;
-    background: url(background.jpg);
-    background-size: cover;
+    background: rgb(234,174,238);
+    background: radial-gradient(circle, rgba(234,174,238,0.9668242296918768) 29%, rgba(148,233,233,1) 87%, rgba(148,233,233,1) 99%);
     /* width: fit-content; */
     /* background-color:rgb(15, 195, 195); */
 }
