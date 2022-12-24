@@ -1,123 +1,127 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HUSIKA</title>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  <div class="header">
-    <div class="topnav" id="myTopnav">
-      <div class="navr">
-        <a href="index.html" class="logo"><span class="rred">Husika.</span></a>
-      </div>
-      <div class="navl">
-        <a href="#Home">Home</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-       
-      </div>
-      
-    </div>
+<html lang="en">
 
-    <!--Content before waves-->
-    <div class="inner-header flex">
-      
-    <section class="banner">
-      <div class="controler">
-        <!-- <div class="rightside"> -->
-          
-          <div class="head">
-                        <h1  class="mainhead text">MAKING VIDEO TO MP3 EASY.</h1>
-                        <div class="input-type">
-                          <input  type="text" id="search" class="input-search" placeholder="paste your video url..." value=""/>
-                          <button  class="button"type="button" onclick='javascript: window.open("https://www.onlinevideoconverter.com/mp3-converter?url="+document.getElementById("search").value, "_self");'>Search</button>
-                          <!-- <button onclick="TestsFunction()">Test</button> -->
-                        </div>
-                      </div>
-                      
-                    </div>
-                      <!-- </div> -->
-                      
-                      
-                      <!--         
-          <footer>
-            <ul class="foot">
-              <div class="fn">
-                <a class="f-22" href="">about</a>
-                <a class="f-22" href="">contact</a>
-              </div>
+	<head>
+		<title>three.js webgl - geometry hierarchy</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+     
+        <svg viewbox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <style type="text/css">
+                    .wave {
+                      animation: wave 8s linear infinite;
+                    }
               
-              <p>licence 2022</p>
-            </ul>
-          </footer> -->
+                    .wave1 {
+                      animation: wave1 10s linear infinite;
+                    }
+              
+                    .wave2 {
+                      animation: wave2 12s linear infinite;
+                    }
+                    
+                    @keyframes wave {
+                      0% {
+                        transform: translateX(0%);
+                      }
+              
+                      100% {
+                          transform: translateX(100%);
+                        }
+                    }
+              
+                    @keyframes wave1 {
+                      0% {
+                          transform: scaleY(1.2) translateX(0%);
+                      }
+              
+                      100% {
+                        transform: scaleY(1.2) translateX(100%);
+                      }
+                    }
+                    
+                    @keyframes wave2 {
+                        0% {
+                        transform: scaleY(.8) translateX(0%);
+                      }
+              
+                      100% {
+                          transform: scaleY(.8) translateX(100%);
+                      }
+                    }
+                  </style>
+                  <path id='sineWave' fill="#0099ff" fill-opacity="0.2" d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
+                </defs>
+                <use class="wave" href="#sineWave" />
+                <use class="wave" x="-100%" href="#sineWave" />
+                <use class="wave1" href="#sineWave" />
+                <use class="wave1" x="-100%" href="#sineWave" />
+                <use class="wave2" href="#sineWave" />
+                <use class="wave2" x="-100%" href="#sineWave" />
+            </svg>
+
+            <header>
+              <a href="index.html" class="logo"><span class="rred">Husika</span><span class="red">.</span></a>
+              <ul class="navigation">
+                  <li><samp class="home"><i class="fa-solid fa-house"></i></samp>&nbsp&nbsp&nbsp<a href="#home">Home</a></li>
+                  <li><samp class="home"><i class="fa-solid fa-person-digging"></i></samp>&nbsp&nbsp&nbsp<a href="#menu">Menu</a></li>
+                  <li><samp class="home"><i class="fa-regular fa-address-card"></i></samp>&nbsp&nbsp&nbsp<a href="#about">About</a></li>
+                  <li><samp class="home"><i class="fa-solid fa-info"></i></samp>&nbsp&nbsp&nbsp<a href="#contact us">Contact us</a></li>
+                 
+                  </a>
+                </ul>
+              </header>
+              
+<!-- 
+            <div class="login-form">
+              <h1>Welcome!</h1>
+              <form>
+                <label for="username">Username:</label><br>
+                <input type="text" id="username"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password"><br>
+                <button type="submit">Log in</button>
+              </form>
+            </div>
+             -->
+
+             <div class="controler">
+              
+                
+                      <div class="head">
+                                 <h1  class="mainhead text">MAKING VIDEO TO MP3 EASY.</h1>
+                              <div class="input-type">
+                                <input  type="text" id="search" class="input-search" placeholder="paste your video url..." value=""/>
+                                <button  class="button"type="button" onclick='javascript: window.open("https://www.onlinevideoconverter.com/mp3-converter?url="+document.getElementById("search").value, "_self");'>Search</button>
+                                
+                              </div>
+                      </div>
+                            
+               </div>
+
+
+              <div class="waveWrapper waveAnimation">
+                <div class="waveWrapperInner bgTop">
+                  <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+                </div>
+                <div class="waveWrapperInner bgMiddle">
+                    <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+                </div>
+                <div class="waveWrapperInner bgBottom">
+                    <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+                </div>
+            </div>
+              
+              
+ 
+        
           
-          
-          
-          
-        </div>
 
-        <!-- <footer>
-    <div class="footer-container">
-    <div class="footer-background"></div>
-    <div class="footer-content">
-    <div class="footer-section about-us">
-      <h3 class="h2">About Us</h3>
-    </div>
-    <div class="footer-section contact-us">
-      <h3 class="h2">Contact Us</h3>
-    </div>
-  </div>
-</div>
-</footer> -->
-
-
-
-
-
-</section>
-
-
-    <!--Just the logo.. Don't mind this-->
-    </div>  
-    <!--Waves Container-->
-    <div>
-    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-    <defs>
-    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-    </defs>
-    <g class="parallax">
-    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-    </g>
-    </svg>
-    </div>
-    <!--Waves end-->
-    
-    
-   
-  <!-- <header>
-    <a href="index.html" class="logo"><span class="rred">Husika</span><span class="red">.</span></a>
-    <ul class="navigation">
-        <li><samp class="home"><i class="fa-solid fa-house"></i></samp>&nbsp&nbsp&nbsp<a href="#home">Home</a></li>
-        <li><samp class="home"><i class="fa-solid fa-person-digging"></i></samp>&nbsp&nbsp&nbsp<a href="#menu">Menu</a></li>
-        <li><samp class="home"><i class="fa-regular fa-address-card"></i></samp>&nbsp&nbsp&nbsp<a href="#about">About</a></li>
-        <li><samp class="home"><i class="fa-solid fa-info"></i></samp>&nbsp&nbsp&nbsp<a href="#contact us">Contact us</a></li>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </ul>
-    </header> -->
-
-
-<script src="app.js"></script>
-
-</body>
+	<script src="app.js"></script>
+	</body>
 </html>
+        
